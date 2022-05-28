@@ -1,0 +1,44 @@
+.nav__menu{
+    @include lm{
+    position: fixed;
+    top: 0;
+    right: -60%;
+    height: 100vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    backdrop-filter: blur(10px);
+   
+    }
+
+    .nav__list .nav__item{
+        display: inline-block;
+        
+
+        @include lm{
+            display: block;
+        }
+
+        &:not(:last-child){
+            margin-right: 30px;
+
+            @include lm{
+                margin-bottom: $m4;
+            }
+        }
+
+        .nav__link{
+            color: $white;
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            @include lm{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

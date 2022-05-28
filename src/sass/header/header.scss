@@ -1,0 +1,39 @@
+@import './navmenu';
+.header{
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        padding: 2rem 2.5rem;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+
+        @include sm{
+            padding: 1rem;
+        }
+
+        .active{
+
+            .nav__menu{
+                right: 0%;
+            }
+        }
+
+    .nav{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__toggle{
+            font-size: 1.5rem;
+            color: $white;
+            cursor: pointer;
+            display: none;
+
+            @include lm{
+                display: block;
+            }
+        }
+    }
+}
