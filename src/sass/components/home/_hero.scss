@@ -1,0 +1,48 @@
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: $white;
+
+    &__img{
+        background-color: rgba(0,0,0,.4);
+        width: 100%;
+        height: 100%;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    &__body{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        h3{
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 5px;
+            margin-bottom: $m1;
+        }
+
+        h1{
+           font-size: 3.375rem; 
+           margin-bottom: $m1;
+        }
+
+        p{
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 2;
+            color: #ABB1BE;
+            margin-bottom: $m4;
+        }
+    }
+
+}
