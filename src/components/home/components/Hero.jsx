@@ -6,7 +6,7 @@ const Hero = () => {
             <div className="slider__img">
                 <img src="./images/home/slider-1.jpg" alt="" className='slider__img-img' />
             </div>
-            <div className="slider__body">
+            <div className="slider__body container">
                 <h3>vorohta, ukraine</h3>
                 <h1>Awesome Design for the Vorokhta Hub</h1>
                 <p>
