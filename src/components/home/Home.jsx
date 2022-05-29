@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from './components/hero/Hero'
 import Services from './components/services/Services'
+import Video from './components/video/Video'
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <div className="home__container">
                 <Hero />
                 <Services />
+                <Video />
             </div>
         </section>
     )
