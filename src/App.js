@@ -6,7 +6,7 @@ import Home from './components/home/Home'
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Home />
     </>
   )

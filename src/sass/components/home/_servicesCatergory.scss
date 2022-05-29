@@ -1,0 +1,35 @@
+.services__category{
+    @extend .grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include md{
+        grid-template-columns: 1fr;
+    }
+
+    &__data{
+        text-align: center;
+        img{
+            width: 75px;
+            margin-bottom: $m2;
+        }
+
+        span{
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: block;
+        margin-bottom: $m1;
+        }
+
+        h3{
+            font-size: 1.35rem;
+            text-transform: capitalize;
+            margin-bottom: $m1;
+        }
+
+        p{
+            color: #00000099;
+            font-size: 0.9375rem;
+        }
+    }
+}
