@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './components/hero/Hero'
+import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
 import Video from './components/video/Video'
 
@@ -10,6 +11,7 @@ const Home = () => {
                 <Hero />
                 <Services />
                 <Video />
+                <Portfolio />
             </div>
         </section>
     )
