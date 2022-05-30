@@ -1,0 +1,24 @@
+@import './teammembers';
+.team{
+    text-align: center;
+
+    &__subtitle{
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-bottom: $m2;
+    }
+
+    &__title{
+        font-size: 3rem;
+        max-width: 750px;
+        margin: 0 auto;
+        line-height: 1.2;
+        margin-bottom: $m10;
+
+        @include lm{
+            font-size: 2.125rem;
+        }
+    }
+}
