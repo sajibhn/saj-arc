@@ -1,40 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { servicesData } from '../../../../data/servicesData'
 
 const ServiceCategory = () => {
+    const [datas, setDatas] = useState(servicesData);
     return (
         <div className="services__category">
-            <div className="services__category__data">
-                <img src="./images/home/house.png" alt="" />
-                <span>your imagination</span>
-                <h3>interior design</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam.
-                </p>
-            </div>
-
-            <div className="services__category__data">
-                <img src="./images/home/note.png" alt="" />
-                <span>your imagination</span>
-                <h3>interior design</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam.
-                </p>
-            </div>
-
-            <div className="services__category__data">
-                <img src="./images/home/connection.png" alt="" />
-                <span>your imagination</span>
-                <h3>interior design</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam.
-                </p>
-            </div>
+            {
+                datas.map((data) => {
+                    const { id, image, quote, title, description } = data
+                    return (
+                        <div className="services__category__data" key={id}>
+                            <img src={image} alt="" />
+                            <span>{quote}</span>
+                            <h3>{title}</h3>
+                            <p>
+                                {description}
+                            </p>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
