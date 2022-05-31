@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Swiper core and required modules
 import { Pagination, A11y } from 'swiper';
 
@@ -10,8 +10,10 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 
 import { FaQuoteLeft } from "react-icons/fa";
+import { testimonialData } from "../../../../data/testimonialData";
 
 const TestimonialContent = () => {
+    const [datas, setDatas] = useState(testimonialData);
     return (
         <div className="testimonial__content container">
             <Swiper
@@ -31,7 +33,41 @@ const TestimonialContent = () => {
                 // slidesPerView={2}
                 pagination={{ clickable: true }}
             >
-                <SwiperSlide>
+                {
+                    datas.map((data) => {
+                        const { id, image, name, position, message } = data;
+                        return (
+                            <SwiperSlide key={id}>
+                                <div className="testimonial__data">
+                                    <div className="testimonial__img">
+                                        <img src={image} alt="" />
+                                    </div>
+                                    <div className="testimonial__body">
+                                        <h3>{name}</h3>
+                                        <span>{position}</span>
+                                        <span className="quote">
+                                            <FaQuoteLeft />
+                                        </span>
+                                        <p>
+                                            {message}
+                                        </p>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        )
+                    })
+                }
+
+
+
+
+
+
+
+
+
+
+                {/* <SwiperSlide>
 
                     <div className="testimonial__data">
                         <div className="testimonial__img">
@@ -51,112 +87,7 @@ const TestimonialContent = () => {
                         </div>
                     </div>
 
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className="testimonial__data">
-                        <div className="testimonial__img">
-                            <img src="./images/home/testimonial-1.jpg" alt="" />
-                        </div>
-                        <div className="testimonial__body">
-                            <h3>taylor roberts</h3>
-                            <span>Co-manager associated</span>
-                            <span className="quote">
-                                <FaQuoteLeft />
-                            </span>
-                            <p>
-                                typefaces and layouts, and in appearance of different general the
-                                content of dummy text is nonsensical.typefaces of dummy text is
-                                nonsensical.
-                            </p>
-                        </div>
-                    </div>
-
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className="testimonial__data">
-                        <div className="testimonial__img">
-                            <img src="./images/home/testimonial-1.jpg" alt="" />
-                        </div>
-                        <div className="testimonial__body">
-                            <h3>taylor roberts</h3>
-                            <span>Co-manager associated</span>
-                            <span className="quote">
-                                <FaQuoteLeft />
-                            </span>
-                            <p>
-                                typefaces and layouts, and in appearance of different general the
-                                content of dummy text is nonsensical.typefaces of dummy text is
-                                nonsensical.
-                            </p>
-                        </div>
-                    </div>
-
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className="testimonial__data">
-                        <div className="testimonial__img">
-                            <img src="./images/home/testimonial-1.jpg" alt="" />
-                        </div>
-                        <div className="testimonial__body">
-                            <h3>taylor roberts</h3>
-                            <span>Co-manager associated</span>
-                            <span className="quote">
-                                <FaQuoteLeft />
-                            </span>
-                            <p>
-                                typefaces and layouts, and in appearance of different general the
-                                content of dummy text is nonsensical.typefaces of dummy text is
-                                nonsensical.
-                            </p>
-                        </div>
-                    </div>
-
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className="testimonial__data">
-                        <div className="testimonial__img">
-                            <img src="./images/home/testimonial-1.jpg" alt="" />
-                        </div>
-                        <div className="testimonial__body">
-                            <h3>taylor roberts</h3>
-                            <span>Co-manager associated</span>
-                            <span className="quote">
-                                <FaQuoteLeft />
-                            </span>
-                            <p>
-                                typefaces and layouts, and in appearance of different general the
-                                content of dummy text is nonsensical.typefaces of dummy text is
-                                nonsensical.
-                            </p>
-                        </div>
-                    </div>
-
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className="testimonial__data">
-                        <div className="testimonial__img">
-                            <img src="./images/home/testimonial-1.jpg" alt="" />
-                        </div>
-                        <div className="testimonial__body">
-                            <h3>taylor roberts</h3>
-                            <span>Co-manager associated</span>
-                            <span className="quote">
-                                <FaQuoteLeft />
-                            </span>
-                            <p>
-                                typefaces and layouts, and in appearance of different general the
-                                content of dummy text is nonsensical.typefaces of dummy text is
-                                nonsensical.
-                            </p>
-                        </div>
-                    </div>
-
-                </SwiperSlide>
+                </SwiperSlide> */}
             </Swiper>
         </div>
     );
