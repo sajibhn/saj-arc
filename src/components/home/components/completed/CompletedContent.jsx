@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
-import { completedData } from '../../../data/completedData';
+import { completedData } from '../../../../data/completedData';
 
 const CompletedContent = () => {
 
