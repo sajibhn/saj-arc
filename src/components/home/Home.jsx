@@ -1,4 +1,5 @@
 import React from 'react'
+import Completed from './completed/Completed'
 import Hero from './components/hero/Hero'
 import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
@@ -15,6 +16,7 @@ const Home = () => {
                 <Video />
                 <Portfolio />
                 <Team />
+                <Completed />
                 <Testimonial />
             </div>
         </section>

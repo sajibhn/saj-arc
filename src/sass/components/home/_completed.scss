@@ -1,0 +1,8 @@
+@import './completedcontent';
+
+.completed{
+        
+    &__container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

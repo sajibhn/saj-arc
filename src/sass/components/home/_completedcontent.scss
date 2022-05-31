@@ -1,0 +1,73 @@
+.completed__content {
+  grid-template-columns: repeat(4, 1fr);
+  padding: $p8 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+  @include lm{
+    grid-template-columns: repeat(2, 1fr);
+}
+@include sm{
+    grid-template-columns: 1fr;
+    box-shadow: none;
+}
+
+  &__data {
+    text-align: center;
+    h3 {
+      font-size: 6.25rem;
+      letter-spacing: 0.025em;
+      color: #ebebeb;
+      position: relative;
+      line-height: 1.1;
+      margin-bottom: $m1;
+
+      
+    }
+
+    h3{
+
+        &::after {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 1px;
+            position: absolute;
+            top: -3%;
+            right: 0;
+            background-color: #ebebeb;
+
+            @include lm{
+                display: none;
+            }
+          }
+    }
+
+
+    &:nth-child(odd) h3{
+        &::after {
+
+            @include lm{
+            content: "";
+            display: block;
+            height: 100%;
+            width: 1px;
+            position: absolute;
+            top: -3%;
+            right: 0;
+            background-color: #ebebeb;
+            }
+
+            @include sm{
+                display: none;
+            }
+          }
+          
+    }
+    
+  
+    h4 {
+      font-size: 1.125rem;
+      font-weight: 300;
+    }
+  }
+}
