@@ -1,101 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaTwitter } from 'react-icons/fa'
+import { teamData } from '../../../../data/teamData'
 
 const TeamMembers = () => {
+    const [datas, setDatas] = useState(teamData)
     return (
         <div className="team__content grid">
-            <div className="team__data">
-                <div className="team__data__img">
-                    <img src="./images/home/team-1.jpg" alt="" />
-                </div>
-                <div className="team__data__body">
-                    <h3>John Balmer</h3>
-                    <span>CEO & Founder</span>
-                    <div className="team__social">
-                        <a href="/">
-                            <FaFacebookF />
-                        </a>
-                        <a href="/">
-                            <FaLinkedinIn />
-                        </a>
-                        <a href="/">
-                            <FaPinterestP />
-                        </a>
-                        <a href="/">
-                            <FaTwitter />
-                        </a>
+
+            {datas.map((data) => {
+                const { id, image, name, role, facebook, linkedin, pinterest, twitter } = data
+                return (
+                    <div className="team__data" key={id}>
+                        <div className="team__data__img">
+                            <img src={image} alt="" />
+                        </div>
+                        <div className="team__data__body">
+                            <h3>{name}</h3>
+                            <span>{role}</span>
+                            <div className="team__social">
+                                <a href={facebook}>
+                                    <FaFacebookF />
+                                </a>
+                                <a href={linkedin}>
+                                    <FaLinkedinIn />
+                                </a>
+                                <a href={pinterest}>
+                                    <FaPinterestP />
+                                </a>
+                                <a href={twitter}>
+                                    <FaTwitter />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="team__data">
-                <div className="team__data__img">
-                    <img src="./images/home/team-2.jpg" alt="" />
-                </div>
-                <div className="team__data__body">
-                    <h3>John Balmer</h3>
-                    <span>CEO & Founder</span>
-                    <div className="team__social">
-                        <a href="/">
-                            <FaFacebookF />
-                        </a>
-                        <a href="/">
-                            <FaLinkedinIn />
-                        </a>
-                        <a href="/">
-                            <FaPinterestP />
-                        </a>
-                        <a href="/">
-                            <FaTwitter />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div className="team__data">
-                <div className="team__data__img">
-                    <img src="./images/home/team-3.jpg" alt="" />
-                </div>
-                <div className="team__data__body">
-                    <h3>John Balmer</h3>
-                    <span>CEO & Founder</span>
-                    <div className="team__social">
-                        <a href="/">
-                            <FaFacebookF />
-                        </a>
-                        <a href="/">
-                            <FaLinkedinIn />
-                        </a>
-                        <a href="/">
-                            <FaPinterestP />
-                        </a>
-                        <a href="/">
-                            <FaTwitter />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div className="team__data">
-                <div className="team__data__img">
-                    <img src="./images/home/team-4.jpg" alt="" />
-                </div>
-                <div className="team__data__body">
-                    <h3>John Balmer</h3>
-                    <span>CEO & Founder</span>
-                    <div className="team__social">
-                        <a href="/">
-                            <FaFacebookF />
-                        </a>
-                        <a href="/">
-                            <FaLinkedinIn />
-                        </a>
-                        <a href="/">
-                            <FaPinterestP />
-                        </a>
-                        <a href="/">
-                            <FaTwitter />
-                        </a>
-                    </div>
-                </div>
-            </div>
+                )
+            })}
+
         </div>
     )
 }
