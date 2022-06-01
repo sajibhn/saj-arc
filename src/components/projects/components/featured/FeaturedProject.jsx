@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { featuredData } from '../../../data/featuredData'
+import { featuredData } from '../../../../data/featuredData'
 
 const FeaturedProject = () => {
     const [datas, setDatas] = useState(featuredData)

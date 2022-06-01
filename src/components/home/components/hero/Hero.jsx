@@ -12,7 +12,7 @@ const Hero = () => {
     SwiperCore.use([Autoplay]);
     const [datas, setDatas] = useState(featuredData)
     return (
-        <div className='hero'>
+        <div className='hero' id='home-hero'>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}

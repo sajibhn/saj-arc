@@ -1,6 +1,6 @@
 import React from 'react'
-import AllProjects from './all projects/AllProjects'
-import FeaturedProject from './featured/FeaturedProject'
+import AllProjects from './components/all projects/AllProjects'
+import FeaturedProject from './components/featured/FeaturedProject'
 
 const Projects = () => {
     return (

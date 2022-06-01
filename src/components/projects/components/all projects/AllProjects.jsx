@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { architectureData } from '../../../data/architectureData'
+import { architectureData } from '../../../../data/architectureData'
 
 const AllProjects = () => {
     const [datas, setDatas] = useState(architectureData)
