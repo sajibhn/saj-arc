@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { featuredData } from '../../../../data/featuredData'
 import Button from '../../../reusable/Button'
+import ProjectCard from '../../../reusable/ProjectCard'
 
 const FeaturedProject = () => {
     const [datas, setDatas] = useState(featuredData)
@@ -12,14 +13,7 @@ const FeaturedProject = () => {
                     {datas.map((data) => {
                         const { id, image, title, category } = data
                         return (
-                            <div className="featured__projects__content__data project__data" key={id}>
-                                <img src={image} alt="" />
-                                <div className="featured__projects__content__data__body project__data__body">
-                                    <h3>{title}</h3>
-                                    <p>{category}</p>
-                                    <a href="/">view project</a>
-                                </div>
-                            </div>
+                            <ProjectCard id={id} image={image} title={title} category={category} />
                         )
                     })}
 
