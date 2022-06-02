@@ -3,6 +3,8 @@
 @import './sass/global/mixins';
 @import './sass/global/typography';
 @import './sass/global/utils';
+// reusable
+@import './sass/components/reusable/reusable';
 
 /* =============== Header =============== */
 @import './sass/header/header.scss';

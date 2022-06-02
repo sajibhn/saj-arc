@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import { architectureData } from '../../../../data/architectureData'
+import Button from '../../../reusable/Button'
 
 const AllProjects = () => {
     const [datas, setDatas] = useState(architectureData)
     return (
         <section className="section all__projects">
             <div className="all__projects__container container">
-                <h2 className="all__projects__title">
-                    all projects
-                </h2>
+                <Button text="all projects" />
                 <div className="all__projects__content grid">
                     {datas.map((data) => {
                         const { id, image, title, category } = data
