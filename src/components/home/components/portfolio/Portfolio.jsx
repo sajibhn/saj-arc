@@ -8,7 +8,7 @@ const Portfolio = () => {
             <div class="portfolio__container grid">
 
                 {
-                    datas.map((data) => {
+                    datas.slice(0, 6).map((data) => {
                         const { id, category, title, image } = data
                         return (
                             <div class="portfolio__data" key={id}>

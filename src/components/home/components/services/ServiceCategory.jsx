@@ -6,7 +6,7 @@ const ServiceCategory = () => {
     return (
         <div className="services__category">
             {
-                datas.map((data) => {
+                datas.slice(0, 3).map((data) => {
                     const { id, image, quote, title, description } = data
                     return (
                         <div className="services__category__data" key={id}>

@@ -40,6 +40,7 @@
             border: 0;
             margin-top: $m1;
             cursor: pointer;
+            @extend .global__button;
         }
     }
 }
