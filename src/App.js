@@ -6,6 +6,7 @@ import Footer from './components/global/footer/Footer'
 import Projects from './components/projects/Projects'
 import Services from './components/services/Services'
 import About from './components/about/About'
+import SinglePost from './components/global/single post/SinglePost'
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       {/* <Home /> */}
       {/* <Projects /> */}
       {/* <Services /> */}
-      <About />
+      {/* <About /> */}
+      <SinglePost />
       <Footer />
     </>
   )
