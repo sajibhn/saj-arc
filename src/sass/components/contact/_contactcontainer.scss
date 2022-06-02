@@ -1,0 +1,11 @@
+@import './contactleft';
+@import './contactright';
+
+#contact__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    @include lm{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,45 @@
+.contact__right{
+
+    
+    form{
+
+        .contact__inputs{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+            @include sm{
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+
+        .contact__input{
+            display: block;
+            width: 100%;
+            padding: $p2;
+            background-color: #F2F2F2;
+            margin-bottom: $m3;
+            border-radius: 0;
+            border: none;
+            border-bottom-style: solid;
+            border-bottom-width: 3px;
+            border-bottom-color: transparent;
+
+            &:focus{
+                border-bottom: 3px solid #004AA0;
+                outline: 0;
+            }
+
+            &::placeholder{
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+
+        button{
+            border: 0;
+            margin-top: $m1;
+            cursor: pointer;
+        }
+    }
+}
