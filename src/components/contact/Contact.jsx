@@ -1,11 +1,11 @@
 import React from 'react'
+import SectionHero from '../reusable/SectionHero'
 import ContactContainer from './components/ContactContainer'
-import Hero from './components/hero'
 
 const Contact = () => {
     return (
         <>
-            <Hero />
+            <SectionHero quote="hear from us" title="contact us" image="./images/contact/contact-bg.jpg" />
             <ContactContainer />
         </>
 
