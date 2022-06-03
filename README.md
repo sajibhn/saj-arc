@@ -1,3 +1,47 @@
+# Saj Arc  - An Architecture Webiste
+
+I have designed and developed this website using React JS and Sass. To create this project, I have taken inspiration from various themes and templates.
+
+## Links
+
+- Solution URL: https://github.com/sajibhn/saj-arc
+- Live Site URL: https://saj-arc.netlify.app/
+
+## Technologies 
+
+- React JS
+- Node-SASS - [Link]([https://swiperjs.com/](https://www.npmjs.com/package/node-sass))
+- Swiper Js - [Link](https://swiperjs.com/)
+- React-modal-video - [Link](https://www.npmjs.com/package/react-modal-video)
+- React-countup - [Link](https://www.npmjs.com/package/react-countup)
+- React icons - [Link](https://react-icons.github.io/react-icons/)
+- React router - [Link](https://reactrouter.com/docs/en/v6/getting-started/installation)
+
+## Features
+
+- Multipage
+- Dynamic posts
+- Dynamic slider using swiper js
+- Mobile responsive
+
+## Future Features
+
+ - make a search bar
+ - add animation 
+ - make contact form work
+
+## What I learned
+
+- I learned about React JS components, JSX, state management
+- I learned about React Router
+- I learned about SASS
+- I learned about popup modal
+
+## Author
+
+ - Sajib Hossain - [twitter](https://twitter.com/sajib_hsn)
+ - Sajib Hossain - [Linked in](https://www.linkedin.com/in/sajib-hossain-17929b225/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
