@@ -4,7 +4,7 @@
     top: 0;
     right: -60%;
     height: 100vh;
-    width: 60%;
+    width: 75vw;
     background-color: rgba(0, 0, 0, .5);
     z-index: -1;
     display: flex;
@@ -38,7 +38,7 @@
             text-transform: uppercase;
 
             @include lm{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }
