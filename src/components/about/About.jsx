@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Team from '../home/components/team/Team'
-import TeamMembers from '../home/components/team/TeamMembers'
 import SectionHero from '../reusable/SectionHero'
 import { teamData } from '../../data/teamData'
 import TeamCard from '../home/components/team/TeamCard'
