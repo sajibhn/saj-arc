@@ -6,9 +6,9 @@ const FooterRight = () => {
         <div className="footer__right">
             <h3>GET IN TOUCH</h3>
             <p>
-                +(01) 426-9824 <br />
+                +(88) 826-512 <br />
                 hello@email.com <br />
-                1418 Luxe Steert, Suite 3845 California, USA
+                2937 Elmwood Avenue,Scottsdale,Arizona,85251
             </p>
             <div className="footer__right__social">
                 <a href="/">

@@ -57,37 +57,6 @@ const TestimonialContent = () => {
                         )
                     })
                 }
-
-
-
-
-
-
-
-
-
-
-                {/* <SwiperSlide>
-
-                    <div className="testimonial__data">
-                        <div className="testimonial__img">
-                            <img src="./images/home/testimonial-1.jpg" alt="" />
-                        </div>
-                        <div className="testimonial__body">
-                            <h3>taylor roberts</h3>
-                            <span>Co-manager associated</span>
-                            <span className="quote">
-                                <FaQuoteLeft />
-                            </span>
-                            <p>
-                                typefaces and layouts, and in appearance of different general the
-                                content of dummy text is nonsensical.typefaces of dummy text is
-                                nonsensical.
-                            </p>
-                        </div>
-                    </div>
-
-                </SwiperSlide> */}
             </Swiper>
         </div>
     );
