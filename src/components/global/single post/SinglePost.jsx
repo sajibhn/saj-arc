@@ -1,39 +1,39 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import { architectureData } from "../../../data/architectureData";
+import Button from "../../reusable/Button";
 
 const SinglePost = () => {
+    const { id } = useParams();
+    const project = architectureData[id]
+
+    const { image, category, title, description, client, date, services } = project
+
     return (
         <section id="single-post" className="container">
             <div className="post__img">
-                <img src="./images/architecture/architecture-3.jpg" alt="" />
+                <img src={image} alt="" />
             </div>
             <div className="post__container grid">
                 <div className="post__container__left">
-                    <h2 className="featured__projects__title">featured</h2>
-                    <h2 className="post__title">Henders Tragers Villa</h2>
-                    <p className="post__description">
-                        We propose creating a multifunctional space where you can make a
-                        choice: either to retire or be together with everybody. The space,
-                        clear of all unnecessary items, will take you to another dimension
-                        and help you to get tuned to a calm repose. Lot’s of light and air.
-                        <br /> <br />
-                        In the center of the room there is a functional zoning volume, a
-                        white cube, dividing the entire living room into 5 zones: active
-                        pastime area, TV area, dressing area, secluded relaxation area and
-                        the central area – relaxation area, located inside the white volume.
+                    {/* <h2 className="featured__projects__title">featured</h2> */}
+                    <Button text={category} />
+                    <h2 className="post__title">{title}</h2>
+                    <p className="post__description" dangerouslySetInnerHTML={{ __html: description }}>
                     </p>
                 </div>
                 <div className="post__container__right">
                     <div className="post__details">
                         <h3>client</h3>
-                        <p>insight studio</p>
+                        <p>{client}</p>
                     </div>
                     <div className="post__details">
                         <h3>Date</h3>
-                        <p>28 Aug 2019</p>
+                        <p>{date}</p>
                     </div>
                     <div className="post__details">
                         <h3>Services</h3>
-                        <p>Design, Art Direction, Website</p>
+                        <p>{services}</p>
                     </div>
                 </div>
             </div>
