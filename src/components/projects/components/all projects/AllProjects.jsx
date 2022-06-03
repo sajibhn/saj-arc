@@ -10,10 +10,10 @@ const AllProjects = () => {
             <div className="all__projects__container container">
                 <Button text="all projects" />
                 <div className="all__projects__content grid">
-                    {datas.map((data) => {
-                        const { id, image, title, category } = data
+                    {datas.map((data, index) => {
+                        const { id, image, title, category, type } = data
                         return (
-                            <ProjectCard id={id} image={image} title={title} category={category} />
+                            <ProjectCard type={type} index={index} key={id} image={image} title={title} category={category} />
                         )
                     })}
 

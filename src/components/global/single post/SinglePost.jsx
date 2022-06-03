@@ -1,13 +1,8 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import { architectureData } from "../../../data/architectureData";
 import Button from "../../reusable/Button";
 
-const SinglePost = () => {
-    const { id } = useParams();
-    const project = architectureData[id]
+const SinglePost = ({ image, category, title, client, date, services, description }) => {
 
-    const { image, category, title, description, client, date, services } = project
 
     return (
         <section id="single-post" className="container">
@@ -16,7 +11,6 @@ const SinglePost = () => {
             </div>
             <div className="post__container grid">
                 <div className="post__container__left">
-                    {/* <h2 className="featured__projects__title">featured</h2> */}
                     <Button text={category} />
                     <h2 className="post__title">{title}</h2>
                     <p className="post__description" dangerouslySetInnerHTML={{ __html: description }}>

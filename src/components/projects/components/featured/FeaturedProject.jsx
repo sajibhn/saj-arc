@@ -10,10 +10,10 @@ const FeaturedProject = () => {
             <div className="featured__projects__container container">
                 <Button text="featured" />
                 <div className="featured__projects__content grid">
-                    {datas.map((data) => {
-                        const { id, image, title, category } = data
+                    {datas.map((data, index) => {
+                        const { id, image, title, category, type } = data
                         return (
-                            <ProjectCard id={id} image={image} title={title} category={category} />
+                            <ProjectCard type={type} index={index} key={id} image={image} title={title} category={category} />
                         )
                     })}
 

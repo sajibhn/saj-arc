@@ -1,14 +1,16 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
-const ProjectCard = ({ key, image, title, category }) => {
+const ProjectCard = ({ image, title, category, type, index }) => {
+    const navigate = useNavigate()
     return (
         <>
-            <div className="featured__projects__content__data project__data" key={key}>
+            <div className="featured__projects__content__data project__data" >
                 <img src={image} alt="" />
                 <div className="featured__projects__content__data__body project__data__body">
                     <h3>{title}</h3>
                     <p>{category}</p>
-                    <a href="/">view project</a>
+                    <Link to={`/${type}/` + index}>view project</Link >
                 </div>
             </div>
         </>
