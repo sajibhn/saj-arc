@@ -1,9 +1,9 @@
 import React from 'react'
 import { FaFacebookF, FaLinkedinIn, FaPinterestP, FaTwitter } from 'react-icons/fa'
 
-const TeamCard = ({ key, image, name, role, facebook, linkedin, pinterest, twitter }) => {
+const TeamCard = ({ image, name, role, facebook, linkedin, pinterest, twitter }) => {
     return (
-        <div className="team__data" key={key}>
+        <div className="team__data">
             <div className="team__data__img">
                 <img src={image} alt="" />
             </div>

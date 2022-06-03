@@ -7,6 +7,7 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import { featuredData } from '../../../../data/featuredData';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     SwiperCore.use([Autoplay]);
@@ -27,7 +28,7 @@ const Hero = () => {
 
                 }}
             >
-                {datas.map((data) => {
+                {datas.map((data, index) => {
                     const { id, image, title, category, objective } = data;
                     return (
                         <SwiperSlide key={id}>
@@ -41,7 +42,7 @@ const Hero = () => {
                                     <p>
                                         {objective}
                                     </p>
-                                    <a href="/" className="btn white">expore it</a>
+                                    <Link to={"/featured/" + index} className="btn white">expore it</Link>
                                 </div>
                             </div>
                         </SwiperSlide>
