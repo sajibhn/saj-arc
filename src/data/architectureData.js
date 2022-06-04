@@ -67,7 +67,7 @@ export const architectureData = [
     },
     {
         id: 7,
-        type: "featured",
+        type: "projects",
         image: '../images/featured/featured-1.jpg',
         category: 'interior',
         title: 'kaizan hillhouse villa',
@@ -79,7 +79,7 @@ export const architectureData = [
     },
     {
         id: 8,
-        type: "featured",
+        type: "projects",
         image: '../images/featured/featured-2.jpg',
         category: 'exterior',
         title: 'interior house villa',
@@ -91,7 +91,7 @@ export const architectureData = [
     },
     {
         id: 9,
-        type: "featured",
+        type: "projects",
         image: '../images/featured/featured-3.jpg',
         category: 'interior',
         title: 'outdoor house villa',
