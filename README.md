@@ -24,11 +24,6 @@ I have designed and developed this website using React JS and Sass. To create th
 - Dynamic slider using swiper js
 - Mobile responsive
 
-## Future Features
-
- - make a search bar
- - add animation 
- - make contact form work
 
 ## What I learned
 
