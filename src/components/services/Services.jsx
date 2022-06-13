@@ -6,7 +6,7 @@ import ServiceContent from './components/servicecontent/ServiceContent'
 const Services = () => {
     return (
         <>
-            <SectionHero quote="we propose" title="best services " image='./images/services/service-hero-bg.jpg' />
+            <SectionHero quote="we propose" title="best services " image='./images/services/service-hero-bg.webp' />
             <ServiceAbout />
             <ServiceContent />
         </>

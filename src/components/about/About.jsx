@@ -7,7 +7,7 @@ const About = () => {
     const [datas, setDatas] = useState(teamData)
     return (
         <>
-            <SectionHero quote="know us" title="about us" image="./images/about/about-bg.jpg" />
+            <SectionHero quote="know us" title="about us" image="./images/about/about-bg.webp" />
             <section className="section team">
                 <div className="team__container container">
                     <h3 className='team__subtitle'>Our Team</h3>

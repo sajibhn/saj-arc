@@ -5,7 +5,7 @@ const ServiceAbout = () => {
         <section className="section" id="service-about">
             <div className="service__about__container container grid">
                 <div className="service__about__container__left">
-                    <img src="./images/services/service-about-image.jpg" alt="" />
+                    <img src="./images/services/service-about-image.webp" alt="" />
                 </div>
                 <div className="service__about__container__right">
                     <span>our basics</span>
