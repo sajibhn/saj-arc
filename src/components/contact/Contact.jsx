@@ -5,7 +5,7 @@ import ContactContainer from './components/ContactContainer'
 const Contact = () => {
     return (
         <>
-            <SectionHero quote="hear from us" title="contact us" image="./images/contact/contact-bg.jpg" />
+            <SectionHero quote="hear from us" title="contact us" image="./images/contact/contact-bg.webp" />
             <ContactContainer />
         </>
 

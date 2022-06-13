@@ -2,7 +2,7 @@ export const architectureData = [
     {
         id: 1,
         type: "projects",
-        image: '../images/architecture/architecture-1.jpg',
+        image: '../images/architecture/architecture-1.webp',
         category: 'interior',
         title: 'raizen house villa',
         description: 'Heading with text.The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design. In the history of architecture geometric rules based on the ideas of proportions and symmetries formed fixed tools for architectural design. The relationship between geometry and architectural design are described. <br /> <br /> The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design.In the history of architecture.',
@@ -14,7 +14,7 @@ export const architectureData = [
         id: 2,
         type: "projects",
         category: 'exterior',
-        image: '../images/architecture/architecture-2.jpg',
+        image: '../images/architecture/architecture-2.webp',
         title: 'interior house villa',
         description: 'Heading with text.The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design. In the history of architecture geometric rules based on the ideas of proportions and symmetries formed fixed tools for architectural design. The relationship between geometry and architectural design are described. <br /> <br /> The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design.In the history of architecture.',
         client: 'insight studio',
@@ -24,7 +24,7 @@ export const architectureData = [
     {
         id: 3,
         type: "projects",
-        image: '../images/architecture/architecture-3.jpg',
+        image: '../images/architecture/architecture-3.webp',
         category: 'interior',
         title: 'new work city villa',
         description: 'Heading with text.The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design. In the history of architecture geometric rules based on the ideas of proportions and symmetries formed fixed tools for architectural design. The relationship between geometry and architectural design are described. <br /> <br /> The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design.In the history of architecture.',
@@ -35,7 +35,7 @@ export const architectureData = [
     {
         id: 4,
         type: "projects",
-        image: '../images/architecture/architecture-4.jpg',
+        image: '../images/architecture/architecture-4.webp',
         category: 'exterior',
         title: 'city villa hall',
         description: 'Heading with text.The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design. In the history of architecture geometric rules based on the ideas of proportions and symmetries formed fixed tools for architectural design. The relationship between geometry and architectural design are described. <br /> <br /> The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design.In the history of architecture.',
@@ -46,7 +46,7 @@ export const architectureData = [
     {
         id: 5,
         type: "projects",
-        image: '../images/architecture/architecture-5.jpg',
+        image: '../images/architecture/architecture-5.webp',
         category: 'interior',
         title: 'madrid hall house',
         description: 'Heading with text.The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design. In the history of architecture geometric rules based on the ideas of proportions and symmetries formed fixed tools for architectural design. The relationship between geometry and architectural design are described. <br /> <br /> The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design.In the history of architecture.',
@@ -57,7 +57,7 @@ export const architectureData = [
     {
         id: 6,
         type: "projects",
-        image: '../images/architecture/architecture-6.jpg',
+        image: '../images/architecture/architecture-6.webp',
         category: 'exterior',
         title: 'hall of fame',
         description: 'Heading with text.The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design. In the history of architecture geometric rules based on the ideas of proportions and symmetries formed fixed tools for architectural design. The relationship between geometry and architectural design are described. <br /> <br /> The relationship between geometry and architectural design are described and discussed along some examples. Geometry is the fundamental science of forms and their order. Geometric figures, forms and transformations build the material of architectural design.In the history of architecture.',
@@ -68,7 +68,7 @@ export const architectureData = [
     {
         id: 7,
         type: "projects",
-        image: '../images/featured/featured-1.jpg',
+        image: '../images/featured/featured-1.webp',
         category: 'interior',
         title: 'kaizan hillhouse villa',
         objective: 'The main objective of the project – transformation of New Youk City in innovative SMART CITY (village) and tourist center.',
@@ -80,7 +80,7 @@ export const architectureData = [
     {
         id: 8,
         type: "projects",
-        image: '../images/featured/featured-2.jpg',
+        image: '../images/featured/featured-2.webp',
         category: 'exterior',
         title: 'interior house villa',
         objective: 'The main objective of the project – transformation of Morrokan City in innovative SMART CITY (village) and tourist center.',
@@ -92,7 +92,7 @@ export const architectureData = [
     {
         id: 9,
         type: "projects",
-        image: '../images/featured/featured-3.jpg',
+        image: '../images/featured/featured-3.webp',
         category: 'interior',
         title: 'outdoor house villa',
         objective: 'The main objective of the project – transformation of Manchester City in innovative SMART CITY (village) and tourist center.',

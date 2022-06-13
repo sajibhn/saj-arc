@@ -2,7 +2,7 @@ export const featuredData = [
     {
         id: 1,
         type: "featured",
-        image: '../images/featured/featured-1.jpg',
+        image: '../images/featured/featured-1.webp',
         category: 'interior',
         title: 'kaizan hillhouse villa',
         objective: 'The main objective of the project – transformation of New Youk City in innovative SMART CITY (village) and tourist center.',
@@ -14,7 +14,7 @@ export const featuredData = [
     {
         id: 2,
         type: "featured",
-        image: '../images/featured/featured-2.jpg',
+        image: '../images/featured/featured-2.webp',
         category: 'exterior',
         title: 'interior house villa',
         objective: 'The main objective of the project – transformation of Morrokan City in innovative SMART CITY (village) and tourist center.',
@@ -26,7 +26,7 @@ export const featuredData = [
     {
         id: 3,
         type: "featured",
-        image: '../images/featured/featured-3.jpg',
+        image: '../images/featured/featured-3.webp',
         category: 'interior',
         title: 'outdoor house villa',
         objective: 'The main objective of the project – transformation of Manchester City in innovative SMART CITY (village) and tourist center.',
