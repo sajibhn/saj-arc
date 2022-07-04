@@ -1,6 +1,7 @@
 # Saj Arc - An Architecture Webiste
 
-I have designed and developed this website using React JS and Sass. To create this project, I have taken inspiration from various themes and templates.
+An architecture agency website that describes their agency and showcases their recent architectural projects. <br>
+I have used React JS and Sass to build this website and deploy it to Netlify.
 
 ## Links
 
